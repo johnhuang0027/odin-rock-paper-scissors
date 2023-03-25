@@ -52,3 +52,14 @@ function playRound(playerSelection, computerSelection){
 
     return verdict;
 }
+
+//loops through 5 games and prints out verdict to console
+function game(){
+    let playerSelection ='';
+    for(let i = 0; i<5; i++){
+        playerSelection=prompt("Enter rock, paper, or scissors!");
+        console.log(playRound(playerSelection, getComputerChoice()));
+    }
+}
+
+game();
